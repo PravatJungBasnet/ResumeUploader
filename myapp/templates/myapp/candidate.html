@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Details</title>
+    <link rel="stylesheet" href="{% static 'myapp/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+</head>
+<body>
+    <div class="text-white text-center my-1"> 
+        <h1 class="alert alert-info">Candidate details</h1>
+    </div>
+    <div class="text-white ms-5 text-bold">
+    <p>Application No:{{pro.id}}</p>
+    <img src="{{pro.profile.url}}" alt="" srcset="" height="200" width="150">
+       
+        <p>Name: {{pro.name}}</p>
+        <p>DOB: {{pro.dob}}</p>
+        <p>Gender: {{pro.gender}}</p>
+        <p>Email: {{pro.email}}</p>
+        <p>Pan No: {{pro.pan}}</p>
+        <p>Locality: {{pro.locality}}</p>
+        <p> Number: {{pro.number}}</p>
+        <p> Attachment: <a href="{{pro.file.url}} " class="btn btn-primary">Download File</a></p>
+       <a href="/" class="btn btn-danger">Back to Home</a>
+        
+        
+    </div>
+        
+     
+        
+     
+       
+        
+     
+    
+</body>
+</html>

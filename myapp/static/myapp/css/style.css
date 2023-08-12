@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(49, 49, 49);
+    list-style: none;
+}
+#id_gender {
+    display: inline-flex;
+    padding-left: 10px;
+   
+ 
+   
+}
